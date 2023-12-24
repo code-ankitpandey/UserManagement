@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_registration
+    username: root
+    password: ANKIT1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ankitpandey12199@gmail.com
+    password: plce vtcr uaoq weec
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+

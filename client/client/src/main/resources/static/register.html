@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body style="display: flex;align-items: center; justify-content: center;" >
+    <div id="registration_tab" class="tab" >
+      <h2>Registration form</h2>
+      <br>  
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required />
+
+      <button type="submit" onclick="registerUser()">Register</button>
+    </div>
+    <div id="myModal" class="modal" >
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn" onclick="closeModal()" style="cursor: pointer;">&times;</span>
+        <p id="modalText"></p>
+      </div>
+    </div>
+    <div id="loadingOverlay" class="loading-overlay">
+      <div class="spinner"></div>
+    </div>
+
+  </body>
+</html>
